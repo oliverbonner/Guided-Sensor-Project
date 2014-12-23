@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Sensor Monitor</title>
+<script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
+<script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fint.js"></script>
+<script type="text/javascript">
+  FusionCharts.ready(function(){
+    var tempChart = new FusionCharts({
+        "type": "realtimeline",
+        "renderAt": "TempChartContainer",
+        "width": "49%",
+        "height": "100%",
+        "dataFormat": "jsonurl",
+        "dataSource":  "tempchartdata.json"
+
+  });
+tempChart.render();
+})
+</script>
+<script type="text/javascript">
+  FusionCharts.ready(function(){
+    var pulseChart = new FusionCharts({
+        "type": "realtimeline",
+        "renderAt": "PulseChartContainer",
+        "width": "49%",
+        "height": "100%",
+        "dataFormat": "jsonurl",
+        "dataSource":  "pulsechartdata.json"
+
+  });
+pulseChart.render();
+})
+</script>
+</head>
+<body>
+	<div style="width: 100%;">
+		<div id="TempChartContainer" style="float: right;">Temp will load here!</div>
+  		<div id="PulseChartContainer" style="float: left;">Pulse will load here!</div>
+	</div>
+</body>
+</html>
