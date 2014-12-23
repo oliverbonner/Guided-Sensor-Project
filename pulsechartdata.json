@@ -1,0 +1,42 @@
+{
+  "chart": {
+    "caption": "Pulse Monitor",
+    "datastreamurl": "PulseDataRead.php",
+    "refreshinterval": "1",
+	"numbersuffix": "/min",
+    "showrealtimevalue": "1",
+    "labeldisplay": "Rotate",
+    "slantlabels": "1",
+	"yAxisMinValue": "0",
+	"yAxisMaxValue": "200",
+	"xAxisNamePadding": "120",
+	"numdisplaysets": "15",
+	"lineThickness": "7",
+	"baseFontSize": "20",
+	"lineColor": "#D46A6A"
+  },
+  "categories": [
+    {}
+  ],
+  "dataset": [
+    {
+      "seriesname": "Pulse",
+      "showvalues": "0"
+    }
+  ],
+  "styles": {
+    "definition": [
+      {
+        "type": "font",
+        "name": "captionFont",
+        "size": "14"
+      }
+    ],
+    "application": [
+      {
+        "toobject": "Realtimevalue",
+        "styles": "captionFont"
+      }
+    ]
+  }
+}
