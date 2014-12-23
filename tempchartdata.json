@@ -1,0 +1,42 @@
+{
+  "chart": {
+    "caption": "Temperature Monitor",
+    "datastreamurl": "TempDataRead.php",
+    "refreshinterval": "0.4",
+    "numbersuffix": "℃",
+    "showrealtimevalue": "1",
+    "labeldisplay": "Rotate",
+    "slantlabels": "1",
+	"yAxisMinValue": "15",
+	"yAxisMaxValue": "40",
+	"xAxisNamePadding": "120",
+	"numdisplaysets": "40",
+	"lineThickness": "7",
+	"baseFontSize": "20",
+	"lineColor": "#4A6B8A"
+  },
+  "categories": [
+    {}
+  ],
+  "dataset": [
+    {
+      "seriesname": "Temperature",
+      "showvalues": "0"
+    }
+  ],
+  "styles": {
+    "definition": [
+      {
+        "type": "font",
+        "name": "captionFont",
+        "size": "14"
+      }
+    ],
+    "application": [
+      {
+        "toobject": "Realtimevalue",
+        "styles": "captionFont"
+      }
+    ]
+  }
+}
